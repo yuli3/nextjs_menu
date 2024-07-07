@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '랜덤 메뉴 돌림판 Lunch Menu Generator',
     description: '랜덤 점심 메뉴 돌림판 Lunch Menu Generator',
-    siteName: 'Next.js',
+    siteName: '랜덤 메뉴 돌림판 Lunch Menu Generator',
     url: 'https://menu.ahoxy.com',
     locale: 'ko_KR',
     type: 'website',
