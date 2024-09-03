@@ -57,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}><Nav />{children}</body>
+      <body className={inter.className}><Nav />{children}
       {/* Kofi Donations */}
       <Script 
         src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' 
@@ -70,6 +70,7 @@ export default function RootLayout({
             'floating-chat.donateButton.text-color': '#fff'
           });`}
       </Script>
+      </body>
       <GoogleAnalytics gaId="G-49WKX1K760" />
     </html>
   );

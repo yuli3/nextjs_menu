@@ -38,7 +38,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "닭볶음탕 Dakbokkeumtang, Spicy Braised Chicken", image: "/images/ddrt.jpg" },
     { menu: "묵은지 돼지김치찜 mugeunji dwaeji kimchi jjim, stewed ribs and aged kimchi ", image: "/images/djkcj.jpg" },
     { menu: "찜닭 안동찜닭 Jjimdak, spicy stewed chicken", image: "/images/jjimdak.jpg" },
-    { menu: "뼈해장국 Haejang-guk, Hangover soup", image: "/images/bhjg.jpg" },
+    { menu: "해장국 뼈해장국 Haejang-guk, Hangover soup", image: "/images/bhjg.jpg" },
     { menu: "회 참치회 포항물회 회덮밥 Hoe, Raw fish", image: "/images/hoe.jpg" },
     { menu: "비빔국수, 쫄면, 열무비빔국수, 김치비빔국수, 들기름비빔국수, 코다리비빔국수 Bibim Guksu, Spicy Noodle", image: "/images/bibim.jpg" },
     { menu: "칼국수 들깨칼국수 닭칼국수 매생이굴칼국수 바지락칼국수 얼큰칼국수 쭈꾸미칼국수 Kalguksu, Noodle Soup", image: "/images/kgs.webp" },
@@ -192,6 +192,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "탄두리 치킨", image: "/images/tanduri.jpg" },
     { menu: "양꼬치 Lamb Skewers", image: "/images/yangkkochi.jpg" },
     { menu: "똠양꿍 Tom Yum Soup", image: "/images/tygtyg.webp" },
+    { menu: "월남쌈 Vietnamese spring rolls", image: "/images/vietssam.webp" }
   ],
   italy: [
     { menu: "라자냐 Lasagna", image: "/images/lasagna.jpg" },
