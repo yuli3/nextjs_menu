@@ -4,18 +4,21 @@ import { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from 'next/image';
 import { menus, CountryType, countryLabels } from '@/lib/menus';
 import { addToHistory } from '@/utils/history';
 // import Link from 'next/link';
-import { Badge } from './ui/badge';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Search } from 'lucide-react';
 
 export default function MenuGenerator() {
   const [selectedCountry, setSelectedCountry] = useState<CountryType>('all');
   const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
+  const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
     const storedHistory = localStorage.getItem('menuHistory');
@@ -23,6 +26,13 @@ export default function MenuGenerator() {
       setHistory(JSON.parse(storedHistory));
     }
   }, []);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (searchQuery) {
+      window.open(`https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`, '_blank')
+    }
+  }
 
   const generateMenu = () => {
     const countryMenus = menus[selectedCountry];
@@ -33,6 +43,7 @@ export default function MenuGenerator() {
     // Update history
     const updatedHistory = addToHistory(randomMenu.menu);
     setHistory(updatedHistory);
+    setSearchQuery(randomMenu.menu)
   };
 
   return (
@@ -88,6 +99,28 @@ export default function MenuGenerator() {
           ))}
         </ol>
       </div>
+
+      <Card className="my-8">
+        <CardHeader>
+          <CardTitle className="text-2xl">구글 검색</CardTitle>
+          <CardDescription>원하는 정보를 검색해보세요</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handleSearch} className="flex items-center space-x-2">
+            <Input
+              type="text"
+              placeholder="검색어를 입력하세요"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="text-lg p-6"
+            />
+            <Button type="submit" size="lg" className="p-6">
+              <Search className="h-6 w-6" />
+              <span className="ml-2">검색</span>
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   );
 }
