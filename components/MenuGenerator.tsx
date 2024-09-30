@@ -88,34 +88,6 @@ export default function MenuGenerator() {
           ))}
         </ol>
       </div>
-
-
-      <section className="flex flex-col mt-8">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        Image Source :
-        사진: 
-        <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/LcIqgBlYxGU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의
-        <a href="https://unsplash.com/@gronemo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roméo A.</a>
-        사진: 
-        <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/sCAN9M2uaS0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의
-        <a href="https://unsplash.com/@vunguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vu Nguyen</a>
-        <br />
-        <br />
-        https://pixabay.com/<br />
-        https://picjumbo.com/<br />
-        https://www.tastemade.com/recipes/ultimate-chirashi-bowl<br />
-        나무위키<br />
-        위키백과<br />
-
-      </section>
     </div>
   );
 }

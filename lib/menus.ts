@@ -46,7 +46,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "물냉면 평양냉면 밀면 Naengmyeon, Cold Noodle", image: "/images/mul-naengmyeon.jpg" },
     { menu: "비빔냉면, 열무냉면, 회냉면, 속초회냉면 Bibim Naengmyeon, Cold Noodle", image: "/images/bibim-naengmyeon.jpg" },
     { menu: "만둣국 Mandu Gook, Dumpling Soup", image: "/images/mandu-guk.jpg" },
-    { menu: "육개장 Yukgaejang, Spicy Beef Soup", image: "/images/ygj.jpg" },
+    { menu: "육개장, 버섯육개장, 소고기육개장 Yukgaejang, Spicy Beef Soup", image: "/images/ygj.jpg" },
     { menu: "된장찌개 차돌박이된장찌개 된장국 청국장 doenjangjjigae, Soybean paste soup", image: "/images/djjg.jpg" },
     { menu: "김치찌개 꽁치김치찌개 돼지고기김치찌개 참치김치찌개, kimchijjigae, Kimchi Stew", image: "/images/kcjg.jpg" },
     { menu: "광어매운탕, 꽃게매운탕, 도미매운탕, 쏘가리매운탕 maeuntang, Spicy fish stew", image: "/images/mt.jpg" },
@@ -66,9 +66,9 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "닭갈비 불닭 치즈불닭 치즈닭갈비 Dakgalbi, Spicy Stir-fried Chicken", image: "/images/dgb.jpg" },
     { menu: "닭꼬치 Dak Kkochi, chicken skewers", image: "/images/dkch.jpg" },
     { menu: "돼지껍데기 dwaejikkeopdegi, Stir-fried Pork Rind", image: "/images/djgdg.webp" },
-    { menu: "훈제오리 hunjeor, smoked duck", image: "/images/hjori.jpg" },
+    { menu: "훈제오리, 오리주물럭 hunjeor, smoked duck", image: "/images/hjori.jpg" },
     { menu: "갈비찜 LA갈비찜 Galbijjim, stewed ribs", image: "/images/galbijjim.jpg" },
-    { menu: "숯불갈비, 소양념갈비, LA갈비 Sutbulgalbi, Charcoal-grilled Galbi", image: "/images/sutbul-galbi.jpg" },
+    { menu: "숯불갈비, 소양념갈비, LA갈비, 등갈비, 매운등갈비 Sutbulgalbi, Charcoal-grilled Galbi", image: "/images/sutbul-galbi.jpg" },
     { menu: "뚝배기 불고기 ttukbaegi bulgogi, hot-pot bulgogi ", image: "/images/ddb.jpg" },
     { menu: "꼬막, 꼬막비빔밥 kkomak bibimbap, cockle bibimbap", image: "/images/kkm.jpg" },
     { menu: "성게알 비빔밥, 멍게 비빔밥 meongge bibimbap, sea pineapple bibimbap", image: "/images/mgbbb.jpg" },
@@ -96,6 +96,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "추어탕 Choo-eo-tang", image: "/images/choot.webp" },
     { menu: "닭발 닭똥집 Chicken Feet", image: "/images/dakbb.jpg" },
     { menu: "돼지껍데기 Pork skin", image: "/images/djggg.jpg" },
+    { menu: "스테이크 솥밥", image: "/images/sotbap.webp" }
   ],
   pizza: [
     { menu: "피자, 고르곤졸라피자, 콰트로 포르마지 피자, 프로슈토 풍기 피자, 시카고 피자, 디트로이트 피자, Pizza, Quattro Formaggi, Prosciutto e Funghi, Chicago Pizza, Detroit Pizza", image: "/images/pizza.jpg" },
@@ -167,7 +168,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "스시 Sushi", image: "/images/sushi.jpg" },
     { menu: "돈카츠 Tonkatsu, pork cutlet", image: "/images/tonkatsu.jpg" },
     { menu: "야끼도리 Yakitori, Chicken Skewers", image: "/images/yakitori.webp" },
-    { menu: "우동 Udon", image: "/images/udon.jpg" },
+    { menu: "우동 김치우동 가케우동 가마아게우동 츠케지루우동 Udon", image: "/images/udon.jpg" },
     { menu: "오코노미야키 Okonomiyaki", image: "/images/okonomiyaki.jpg" },
     { menu: "타코야키 Takoyaki", image: "/images/takoyaki.jpg" },
     { menu: "치라시스시 치라시볼 Chirashi Bowl", image: "/images/chirashi.jpg" },
@@ -206,13 +207,14 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "티라미수 Tiramisu", image: "/images/tiramisu.jpg" },
     { menu: "햄과 멜론 Prosciutto e Melone", image: "/images/prosciutto-e-melone.jpg" },
     { menu: "파니니 Panini", image: "/images/panini.jpg" },
-    //구안찰레, 빈코토, 푸실리 파스타, 파스타 에 팩시오이 Pasta e Fagioli, 메젤루나, 프리톨라, 추파 잉글레세 Zuppa Inglese, 
+    { menu: "라비올리 Ravioli", image: "/images/lavioli.webp" },
+    { menu: "구안찰레 Guanciale", image: "/images/guanciale.webp"},
+    { menu: "파스타 에 파졸리 Pasta e fagioli", image: "/iamges/pastafazool.webp"}
 
-    //바닐라 젤라또
+    //메젤루나, 프리톨라, 추파 잉글레세 Zuppa Inglese, 
     //수골리
     //Loading, 이미지 skeleton
-    //setTimeout?
-    //솥밥 버터 스테이크
+    //setTimeout
   ],
   france: [
     { menu: "크로크무슈 Croque-Monsieur", image: "/images/croque.webp" },
