@@ -198,7 +198,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "라자냐 Lasagna", image: "/images/lasagna.jpg" },
     { menu: "카프레제 Caprese salad", image: "/images/caprese.jpg" },
     { menu: "젤라또 Gelato", image: "/images/gelato.jpg" },
-    { menu: "파스타 알리오올리오, 바질페스토, 명란, 까르보나라, 볼로네제, 크림, 로제, 투움바", image: "/images/pasta.jpg" },
+    { menu: "파스타 알리오올리오, 봉골레, 바질페스토, 명란, 까르보나라, 볼로네제, 크림, 로제, 투움바, 아라비아따, 라구 Pasta", image: "/images/pasta.jpg" },
     { menu: "마르게리따 피자 Margherita Pizza", image: "/images/margherita-pizza.jpg" },
     { menu: "리조또 Risotto", image: "/images/risotto.jpg" },
     { menu: "오소부코 Osso Buco", image: "/images/osso-buco.jpg" },
@@ -206,6 +206,13 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "티라미수 Tiramisu", image: "/images/tiramisu.jpg" },
     { menu: "햄과 멜론 Prosciutto e Melone", image: "/images/prosciutto-e-melone.jpg" },
     { menu: "파니니 Panini", image: "/images/panini.jpg" },
+    //구안찰레, 빈코토, 푸실리 파스타, 파스타 에 팩시오이 Pasta e Fagioli, 메젤루나, 프리톨라, 추파 잉글레세 Zuppa Inglese, 
+
+    //바닐라 젤라또
+    //수골리
+    //Loading, 이미지 skeleton
+    //setTimeout?
+    //솥밥 버터 스테이크
   ],
   france: [
     { menu: "크로크무슈 Croque-Monsieur", image: "/images/croque.webp" },

@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from 'next/image';
 import { menus, CountryType, countryLabels } from '@/lib/menus';
 import { addToHistory } from '@/utils/history';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { Badge } from './ui/badge';
 
 export default function MenuGenerator() {
@@ -49,16 +49,20 @@ export default function MenuGenerator() {
       </RadioGroup>
 
       <div className="m-2">
-        <Button onClick={generateMenu} className="mt-4 mb-4 text-xl">Generate Random Menu</Button>
+        <Button onClick={generateMenu} className="mt-4 mb-4 text-xl">랜덤 메뉴 생성 Tada!</Button>
       </div>
 
 
       {selectedMenu && (
-        <Card className="mt-4 p-5">
+        <Card className="my-4 p-5 mx-auto w-[300px] md:w-[450px]">
+          <CardHeader>
+            <CardTitle>
+              <p className="text-4xl font-bold">{selectedMenu}</p>
+            </CardTitle>
+          </CardHeader>
           <CardContent>
-            <p className="text-4xl font-bold">{selectedMenu}</p>
             {selectedImage && (
-              <div className="mt-4">
+              <div>
                 <Image
                   src={selectedImage}
                   alt={selectedMenu}
@@ -66,7 +70,7 @@ export default function MenuGenerator() {
                   height={200}
                   className="rounded-lg"
                   style={{
-                    width: '375',
+                    width: '100%',
                     height: 'auto',
                   }}
                 />
@@ -77,7 +81,7 @@ export default function MenuGenerator() {
       )}
 
       <div className="mt-8">
-        <h3 className="text-xl font-bold mb-4">Previous Suggestions</h3>
+        <h3 className="text-xl font-bold mb-4">추천 목록들 previous suggestions...</h3>
         <ol className="list-decimal list-inside">
           {history.map((item, index) => (
             <li key={index} className="mb-2">{item}</li>
@@ -86,33 +90,7 @@ export default function MenuGenerator() {
       </div>
 
 
-      <section className="flex flex-col pt-5">
-        <br />
-        <br />
-        <br />
-        <br />
-        <Button className="w-[150px]" variant="secondary" asChild>
-          <Link href="https://toss.me/tqqq3">토스로 후원하기</Link>
-        </Button>
-        <br />
-        <br />
-        <br />
-        <br />
-
-
-        <iframe 
-          src="https://coupa.ng/cdYUBF" 
-          width="360" 
-          height="44" 
-          />
-
-        <iframe 
-          src="https://ads-partners.coupang.com/widgets.html?id=789401&template=carousel&trackingCode=AF4299611&subId=&width=350&height=800&tsource=" 
-          width="350"
-          height="800"
-          />
-        이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
-
+      <section className="flex flex-col mt-8">
         <br />
         <br />
         <br />
