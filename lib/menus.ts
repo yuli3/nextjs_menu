@@ -20,8 +20,8 @@ type MenuItem = {
 export const menus: Record<CountryType, MenuItem[]> = {
   all: [],
   korea: [
-    { menu: "김밥 Gimbap", image: "/images/gimbap.jpg" },
-    { menu: "라면, 치즈라면, 떡라면 Ramyun", image: "/images/ramyun.jpg" },
+    { menu: "김밥 꼬마김밥 충무김밥 참치김밥 유부김밥 불고기김밥 제육김밥 Gimbap", image: "/images/gimbap.jpg" },
+    { menu: "라면, 치즈라면, 떡라면, 참치라면, 빨개떡, 콩나물라면, 해장라면, 짬뽕라면 Ramyun", image: "/images/ramyun.jpg" },
     { menu: "떡볶이, 엽기떡볶이 Tteokbbokki, Spicy rice cake", image: "/images/tteokbokki.jpg" },
     { menu: "순대, 찹쌀순대, 오징어순대 Sundae, Blood Sosauge", image: "/images/sundae.jpg" },
     { menu: "족발 Jokbal, pig's trotters", image: "/images/jokbal.jpg" },
@@ -122,6 +122,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "도넛 Donut", image: "/images/donut.webp" },
     { menu: "프레첼 Pretzel", image: "/images/pretzel.webp" },
     { menu: "뮤즐리 Musli", image: "/images/musli.jpg" },
+    { menu: "포케 Poke", image: "/images/poke.jpg" },
   ],
   mexico: [
     { menu: "타코, Taco", image: "/images/tacos.jpg" },
