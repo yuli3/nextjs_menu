@@ -1,15 +1,15 @@
 export type CountryType = 'all' | 'korea' | 'pizza' | 'china' | 'japan' | 'asia' | 'mexico' | 'italy' | 'france';
 
 export const countryLabels: Record<CountryType, string> = {
-  all: 'All',
+  all: '아무거나, All',
   korea: '한식, Korea',
   pizza: '피자/치킨/양식',
   china: '중식, China',
   japan: '일식, Japan',
   asia: '아시안, Asia',
-  mexico: 'Spain, Mexico',
-  italy: 'Italy',
-  france: 'France'
+  mexico: '스페인, Spain, Mexico',
+  italy: '이태리, Italy',
+  france: '프랑스, France'
 };
 
 type MenuItem = {
@@ -105,7 +105,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "팬케이크, Pancake", image: "/images/pancake.jpg" },
     { menu: "와플, Waffle", image: "/images/waffle.jpg" },
     { menu: "샌드위치, Sandwich", image: "/images/sandwich.jpg" },
-    { menu: "핫도그, Hot dog", image: "/images/hot-dog.jpg" },
+    { menu: "핫도그, 명랑핫도그, Hot dog, Corn dog", image: "/images/hot-dog.jpg" },
     { menu: "토스트, Toast", image: "/images/toast.jpg" },
     { menu: "치즈스틱, Cheese Stick", image: "/images/cheese-sticks.jpg" },
     { menu: "붕어빵 Boong-eoh Bbang", image: "/images/bb.jpg" },
@@ -167,7 +167,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "라멘 Ramen", image: "/images/ramen.jpg" },
     { menu: "덴뿌라 Tempura", image: "/images/tempura.jpg" },
     { menu: "스시 Sushi", image: "/images/sushi.jpg" },
-    { menu: "돈카츠 Tonkatsu, pork cutlet", image: "/images/tonkatsu.jpg" },
+    { menu: "돈카츠, 경양식 돈까스 Tonkatsu, pork cutlet", image: "/images/tonkatsu.jpg" },
     { menu: "야끼도리 Yakitori, Chicken Skewers", image: "/images/yakitori.webp" },
     { menu: "우동 김치우동 가케우동 가마아게우동 츠케지루우동 Udon", image: "/images/udon.jpg" },
     { menu: "오코노미야키 Okonomiyaki", image: "/images/okonomiyaki.jpg" },

@@ -12,6 +12,7 @@ import { addToHistory } from '@/utils/history';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
+import { useThrottle } from '@/hooks/useThrottle';
 
 export default function MenuGenerator() {
   const [selectedCountry, setSelectedCountry] = useState<CountryType>('all');
@@ -34,7 +35,7 @@ export default function MenuGenerator() {
     }
   }
 
-  const generateMenu = () => {
+  const generateMenu = useThrottle(() => {
     const countryMenus = menus[selectedCountry];
     const randomMenu = countryMenus[Math.floor(Math.random() * countryMenus.length)];
     setSelectedMenu(randomMenu.menu);
@@ -44,7 +45,7 @@ export default function MenuGenerator() {
     const updatedHistory = addToHistory(randomMenu.menu);
     setHistory(updatedHistory);
     setSearchQuery(randomMenu.menu)
-  };
+  }, 1000);
 
   return (
     <div>
@@ -79,6 +80,7 @@ export default function MenuGenerator() {
                   alt={selectedMenu}
                   width={375}
                   height={200}
+                  quality={75}
                   className="rounded-lg"
                   style={{
                     width: '100%',
