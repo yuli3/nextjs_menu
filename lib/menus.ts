@@ -38,7 +38,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "닭볶음탕 Dakbokkeumtang, Spicy Braised Chicken", image: "/images/ddrt.jpg" },
     { menu: "묵은지 돼지김치찜 mugeunji dwaeji kimchi jjim, stewed ribs and aged kimchi ", image: "/images/djkcj.jpg" },
     { menu: "찜닭 안동찜닭 Jjimdak, spicy stewed chicken", image: "/images/jjimdak.jpg" },
-    { menu: "해장국 뼈해장국 Haejang-guk, Hangover soup", image: "/images/bhjg.jpg" },
+    { menu: "해장국 시래기해장국 뼈해장국 Haejang-guk, Hangover soup", image: "/images/bhjg.jpg" },
     { menu: "회 참치회 포항물회 회덮밥 Hoe, Raw fish", image: "/images/hoe.jpg" },
     { menu: "비빔국수, 쫄면, 열무비빔국수, 김치비빔국수, 들기름비빔국수, 코다리비빔국수 Bibim Guksu, Spicy Noodle", image: "/images/bibim.jpg" },
     { menu: "칼국수 들깨칼국수 닭칼국수 매생이굴칼국수 바지락칼국수 얼큰칼국수 쭈꾸미칼국수 Kalguksu, Noodle Soup", image: "/images/kgs.webp" },
@@ -47,7 +47,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "비빔냉면, 열무냉면, 회냉면, 속초회냉면 Bibim Naengmyeon, Cold Noodle", image: "/images/bibim-naengmyeon.jpg" },
     { menu: "만둣국 Mandu Gook, Dumpling Soup", image: "/images/mandu-guk.jpg" },
     { menu: "육개장, 버섯육개장, 소고기육개장 Yukgaejang, Spicy Beef Soup", image: "/images/ygj.jpg" },
-    { menu: "된장찌개 차돌박이된장찌개 된장국 청국장 doenjangjjigae, Soybean paste soup", image: "/images/djjg.jpg" },
+    { menu: "된장찌개 차돌박이된장찌개 된장국 시래기된장국 청국장 doenjangjjigae, Soybean paste soup", image: "/images/djjg.jpg" },
     { menu: "김치찌개 꽁치김치찌개 돼지고기김치찌개 참치김치찌개, kimchijjigae, Kimchi Stew", image: "/images/kcjg.jpg" },
     { menu: "광어매운탕, 꽃게매운탕, 도미매운탕, 쏘가리매운탕 maeuntang, Spicy fish stew", image: "/images/mt.jpg" },
     { menu: "순대국밥 돼지국밥 따로국밥 Sundaegukbap, Blood Sausage and Rice Soup", image: "/images/sundae-gukbap.jpg" },
@@ -122,7 +122,7 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "도넛 Donut", image: "/images/donut.webp" },
     { menu: "프레첼 Pretzel", image: "/images/pretzel.webp" },
     { menu: "뮤즐리 Musli", image: "/images/musli.jpg" },
-    { menu: "포케 Poke", image: "/images/poke.jpg" },
+    { menu: "포케, 연어 포케 Poke", image: "/images/poke.jpg" },
   ],
   mexico: [
     { menu: "타코, Taco", image: "/images/tacos.jpg" },
@@ -210,8 +210,8 @@ export const menus: Record<CountryType, MenuItem[]> = {
     { menu: "파니니 Panini", image: "/images/panini.jpg" },
     { menu: "라비올리 Ravioli", image: "/images/lavioli.webp" },
     { menu: "구안찰레 Guanciale", image: "/images/guanciale.webp"},
-    { menu: "파스타 에 파졸리 Pasta e fagioli", image: "/iamges/pastafazool.webp"}
-
+    { menu: "파스타 에 파졸리 Pasta e fagioli", image: "/iamges/pastafazool.webp"},
+    { menu: "토르텔리니 인 브로도, Tortellini Nel Brodo", image: "images/Tortellini.png" }
     //메젤루나, 프리톨라, 추파 잉글레세 Zuppa Inglese, 
     //수골리
     //Loading, 이미지 skeleton
